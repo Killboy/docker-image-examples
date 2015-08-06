@@ -13,7 +13,7 @@ ADD ./ruby_context /usr/bin/
 EXPOSE 9292
 
 RUN mkdir /opt/ruby/source
-RUN chmod +x /usr/bin/prepare /usr/bin/run /usr/bin/ruby_context /usr/bin/save-artifacts
+RUN chmod +x /usr/bin/prepare /usr/bin/run /usr/bin/ruby_context
 
 RUN mkdir /opt/ruby/bundle
 RUN cd /opt/ruby && /usr/bin/ruby_context gem install bundler --no-rdoc --no-ri
